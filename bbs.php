@@ -14,7 +14,7 @@
 
 <?php
   //POST送信が行われたら、下記の処理を実行
-  if(isset($_POST)&&!empty($_POST)){//なぜnicknameだけでいいのか？
+  if(isset($_POST)&&!empty($_POST)){//なぜnicknameだけでいいのか？←isset($_POST['nickname'])の場合
     //データベースに接続
   $dsn = 'mysql:dbname=oneline_bbs;host=localhost';
   $user = 'root';
